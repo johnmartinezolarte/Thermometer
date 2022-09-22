@@ -62,7 +62,19 @@ input{
     height: 35px;
     font-size: 20px;
     position: absolute;
-    bottom: 60px;
+    bottom: 90px;
+    right: 41%;
+}
+.restart{
+    background-color:firebrick;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: 18%;
+    height: 35px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 40px;
     right: 41%;
 }
 .emptyBar{
@@ -73,7 +85,7 @@ input{
     height: 250px;
     overflow: hidden;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction:column-reverse;
 }
 .fillBar{
     color:white;
