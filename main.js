@@ -2,15 +2,22 @@ const fahrenheit=document.querySelector('#temperatureF');
 const celsius=document.querySelector('.temperatureC');
 const convert=document.querySelector('.convert');
 const fillBar=document.querySelector('.fillBar');
+const restart=document.querySelector('.restart');
 
 let result;
 
-convert.addEventListener('click', ()=>{(fahrenheit.value)?convertFahrenheit():location.reload()})
+convert.addEventListener('click', ()=>{(fahrenheit.value)?convertFahrenheit():location.reload()});
+
+restart.addEventListener('click', refresh);
+
+function refresh(){
+    location.reload();
+}
 
 function convertFahrenheit(){
     result=((fahrenheit.value-32)*(5/9)).toFixed(1);
     celsius.innerHTML=result+' °';
-    fillRedBar()
+    fillRedBar();
 }
 
 function fillRedBar(){
